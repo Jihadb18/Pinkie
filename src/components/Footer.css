@@ -1,0 +1,56 @@
+.footer {
+  background: var(--cream-deep);
+  padding-top: 64px;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--sand);
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer__brand-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--rose-deep-dark);
+}
+
+.footer__tag {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.footer__nav,
+.footer__socials {
+  display: flex;
+  gap: 24px;
+  font-size: 0.92rem;
+}
+
+.footer__nav a:hover,
+.footer__socials a:hover {
+  color: var(--rose-deep);
+}
+
+.footer__bottom {
+  text-align: center;
+  padding: 22px 0;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 640px) {
+  .footer__inner {
+    flex-direction: column;
+    gap: 22px;
+  }
+}

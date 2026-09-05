@@ -1,0 +1,331 @@
+.hero {
+  position: relative;
+  padding: clamp(140px, 16vw, 200px) 0 clamp(80px, 10vw, 120px);
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: clamp(40px, 6vw, 80px);
+}
+
+.hero__text {
+  max-width: 560px;
+}
+
+/* =========================
+   TEXT ANIMATIONS
+========================= */
+
+.hero__eyebrow,
+.hero__title,
+.hero__desc,
+.hero__actions {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero--loaded .hero__eyebrow {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.05s;
+}
+
+.hero--loaded .hero__title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.16s;
+}
+
+.hero--loaded .hero__desc {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.hero--loaded .hero__actions {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.42s;
+}
+
+.hero__eyebrow {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--rose-deep);
+  margin-bottom: 18px;
+  letter-spacing: 0.02em;
+}
+
+.hero__title {
+  font-size: clamp(2.6rem, 5.4vw, 4.2rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--rose-deep-dark);
+  line-height: 1.05;
+}
+
+html[dir="rtl"] .hero__title {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.hero__desc {
+  margin-top: 26px;
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  line-height: 1.7;
+}
+
+.hero__actions {
+  margin-top: 38px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero__visual {
+  position: relative;
+  height: clamp(360px, 42vw, 560px);
+
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+
+.hero--loaded .hero__visual {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.hero__frame {
+  position: absolute;
+  border-radius: var(--radius-lg);
+}
+
+.hero__frame--main {
+  inset-block-start: 0;
+  inset-inline-end: 8%;
+  inset-block-end: 6%;
+  inset-inline-start: 0;
+
+  background: var(--blush);
+  box-shadow: var(--shadow-lift);
+
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.hero__carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero__image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit:contain;
+
+  opacity: 0;
+  transform: scale(1.04) translateX(18px);
+
+  transition:
+    opacity 1s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+
+  pointer-events: none;
+}
+
+.hero__image--active {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+}
+
+/* =========================
+   DOTS
+========================= */
+
+.hero__dots {
+  position: absolute;
+
+  left: 50%;
+  bottom: 22px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  z-index: 5;
+}
+
+.hero__dot {
+  width: 7px;
+  height: 7px;
+
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.45);
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero__dot:hover {
+  transform: scale(1.2);
+}
+
+.hero__dot--active {
+  width: 22px;
+  border-radius: 10px;
+  background: white;
+}
+
+/* =========================
+   ACCENT
+========================= */
+
+.hero__frame--accent {
+  inset-block-start: auto;
+  inset-inline-end: 0;
+  inset-block-end: 0;
+  inset-inline-start: auto;
+
+  width: 46%;
+  height: 40%;
+
+  background: var(--sand);
+
+  z-index: 0;
+
+  transform: translate(10%, 10%);
+}
+
+html[dir="rtl"] .hero__frame--accent {
+  transform: translate(-10%, 10%);
+}
+
+/* =========================
+   DECORATIONS
+========================= */
+
+.hero__deco {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.hero__deco--one {
+  width: 220px;
+  height: 220px;
+
+  background: var(--blush-soft);
+
+  top: 8%;
+  inset-inline-start: -80px;
+}
+
+.hero__deco--two {
+  width: 140px;
+  height: 140px;
+
+  border: 1.5px solid var(--rose);
+
+  inset-inline-end: 6%;
+  bottom: 4%;
+
+  opacity: 0.5;
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__image {
+    transition: opacity 0.3s ease;
+    transform: none;
+  }
+
+  .hero__image--active {
+    transform: none;
+  }
+
+  .hero__eyebrow,
+  .hero__title,
+  .hero__desc,
+  .hero__actions,
+  .hero__visual {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    order: -1;
+    height: 360px;
+  }
+
+  .hero__text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero__visual {
+    height: 320px;
+  }
+
+  .hero__frame--main {
+    inset-inline-end: 3%;
+  }
+
+  .hero__dots {
+    bottom: 16px;
+  }
+}

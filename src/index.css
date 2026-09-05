@@ -1,0 +1,235 @@
+/* ─────────────────────────────────────────────────────────────
+   DESIGN TOKENS
+───────────────────────────────────────────────────────────── */
+:root {
+  /* Couleurs */
+  --cream: #fbf3ef;
+  --cream-deep: #f3e7de;
+  --blush: #f6e1e4;
+  --blush-soft: #fbeef0;
+  --rose: #d9a5ac;
+  --rose-deep: #8c4a56;
+  --rose-deep-dark: #6f3742;
+  --sand: #eadfd2;
+  --ink: #3a2a2e;
+  --ink-soft: #6b5457;
+  --white: #fffdfb;
+
+  /* Typographie */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Outfit", "Segoe UI", sans-serif;
+
+  /* Rayons & ombres */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 32px;
+  --shadow-soft: 0 12px 32px -16px rgba(140, 74, 86, 0.28);
+  --shadow-lift: 0 20px 48px -20px rgba(140, 74, 86, 0.38);
+
+  /* Rythme */
+  --section-pad: clamp(64px, 9vw, 128px);
+  --container-w: 1240px;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.12;
+  margin: 0;
+  color: var(--rose-deep-dark);
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--rose-deep);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   LAYOUT UTILITAIRES
+───────────────────────────────────────────────────────────── */
+.container {
+  max-width: var(--container-w);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 56px);
+}
+
+.section {
+  padding: var(--section-pad) 0;
+  position: relative;
+}
+
+.section-heading {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--rose-deep);
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+}
+
+.section-lede {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 52ch;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   BOUTONS
+───────────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, background 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--rose-deep);
+  color: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  background: var(--rose-deep-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--rose-deep-dark);
+  border: 1.5px solid var(--rose);
+}
+
+.btn-secondary:hover {
+  background: var(--blush-soft);
+  border-color: var(--rose-deep);
+}
+
+.btn-whatsapp {
+  background: #3f7a5c;
+  color: var(--white);
+}
+
+.btn-whatsapp:hover {
+  background: #336a4d;
+  transform: translateY(-2px);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   REVEAL AU SCROLL (léger, ciblé)
+───────────────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ARABE — typographie dédiée
+   Fraunces/Outfit ne couvrent pas l'arabe ; on bascule sur des
+   polices Google Fonts pensées pour l'arabe tout en gardant le
+   même rythme visuel (une police à personnalité pour les titres,
+   une police géométrique douce pour le texte courant).
+───────────────────────────────────────────────────────────── */
+:root[lang="ar"] {
+  --font-display: "El Messiri", "Fraunces", "Georgia", serif;
+  --font-body: "Cairo", "Outfit", "Segoe UI", sans-serif;
+}
+
+/* Le letter-spacing négatif et l'italique sont pensés pour le latin ;
+   ils déforment l'arabe, donc on les neutralise. */
+:root[lang="ar"] h1,
+:root[lang="ar"] h2,
+:root[lang="ar"] h3,
+:root[lang="ar"] h4 {
+  letter-spacing: 0;
+}
+
+:root[lang="ar"] .hero__title,
+:root[lang="ar"] .about__lede,
+:root[lang="ar"] .about__placeholder {
+  font-style: normal;
+}

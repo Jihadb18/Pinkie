@@ -1,0 +1,48 @@
+.lang-switch {
+  display: flex;
+  align-items: center;
+  font-size: 0.82rem;
+}
+
+.lang-switch__item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.lang-switch__btn {
+  padding: 6px 7px;
+  color: var(--ink-soft);
+  font-weight: 500;
+  transition: color 0.25s ease;
+  line-height: 1;
+}
+
+.lang-switch__btn:hover {
+  color: var(--rose-deep-dark);
+}
+
+.lang-switch__btn--active {
+  color: var(--rose-deep);
+}
+
+.lang-switch__sep {
+  color: var(--sand);
+  font-size: 0.75rem;
+}
+
+/* Variante barre de navigation (desktop) */
+.lang-switch--inline {
+  margin-inline-start: 8px;
+}
+
+/* Variante menu mobile plein écran */
+.lang-switch--mobile {
+  justify-content: center;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.lang-switch--mobile .lang-switch__btn {
+  font-size: 0.95rem;
+  padding: 8px 10px;
+}
