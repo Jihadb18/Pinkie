@@ -3,7 +3,7 @@ export default {
   meta: {
     title: "Pinkie — Accessoires faits main",
     description:
-      "Accessoires en tissu faits main — scrunchies, nœuds, headbands, satin et trousses, créés à la main en petites séries.",
+      "Accessoires en tissu faits main — scrunchies, nœuds, headbands, bonnets et trousses, créés à la main en petites séries.",
   },
 
   common: {
@@ -32,7 +32,7 @@ export default {
     titleLine1: "Petites pièces,",
     titleLine2: "faites avec amour.",
     description:
-      "Des accessoires faits main pour ajouter une touche douce et colorée à votre quotidien — scrunchies, nœuds, headbands et trousses, cousus à la main en petites séries.",
+      "Des accessoires faits main pour ajouter une touche douce et colorée à votre quotidien — scrunchies, nœuds, headbands, bonnets et trousses, cousus à la main en petites séries.",
     imagePlaceholder: "Votre photo produit ici",
   },
 
@@ -41,96 +41,96 @@ export default {
     scrunchies: "Scrunchies",
     noeuds: "Nœuds",
     headbands: "Headbands",
-    satin: "Satin",
+    bonnet: "Bonnet",
     trousse: "Trousse",
   },
 
   collection: {
     eyebrow: "La collection",
     title: "Chaque pièce, cousue à la main",
-    lede: "Scrunchies, nœuds, headbands, accessoires en satin et trousses — de petites séries pensées pour durer et pour plaire.",
+    lede: "Scrunchies, nœuds, headbands, bonnets et trousses — de petites séries pensées pour durer et pour plaire.",
     empty: "Aucun produit dans cette catégorie pour le moment.",
     filterAriaLabel: "Filtrer les produits par catégorie",
   },
 
   products: {
-  "scr-01": {
-  name: "Scrunchie",
-  size: "Grand",
-  description: "Un grand scrunchie en satin doux et élégant, disponible en plusieurs couleurs.",
-},
-"scr-02": {
-  name: "Scrunchie",
-  size: "Grand",
-  description: "Un grand scrunchie en satin doux et élégant, disponible en plusieurs couleurs.",
-},
-"scr-03": {
-  name: "Scrunchie",
-  size: "Grand",
-  description: "Un grand scrunchie en satin doux et élégant, disponible en plusieurs couleurs.",
-},
-"scr-04": {
-  name: "Scrunchie",
-  size: "Grand",
-  description: "Un grand scrunchie en satin doux et élégant, disponible en plusieurs couleurs.",
-},
+    "scr-01": {
+      name: "Scrunchie",
+      size: "Grand",
+      description: "Un grand scrunchie en satin doux et élégant, disponible en plusieurs couleurs.",
+    },
+    "scr-02": {
+      name: "Scrunchie",
+      size: "Grand",
+      description: "Un grand scrunchie en satin doux et élégant, disponible en plusieurs couleurs.",
+    },
+    "scr-03": {
+      name: "Scrunchie",
+      size: "Grand",
+      description: "Un grand scrunchie en satin doux et élégant, disponible en plusieurs couleurs.",
+    },
+    "scr-04": {
+      name: "Scrunchie",
+      size: "Grand",
+      description: "Un grand scrunchie en satin doux et élégant, disponible en plusieurs couleurs.",
+    },
     "noe-01": {
-      name: "Nœud Liberty Doux",
-      size: "Unique",
-      description: "Nœud en tissu fleuri façon Liberty, monté sur pince plate, fait main pièce par pièce.",
+      name: "Scrunchies avec Nœud",
+      size: "Unique avec ruban suspendu",
+      description: "Un magnifique scrunchie en satin orné d'un grand nœud élégant, idéal pour ajouter une touche chic et sophistiquée à vos coiffures.",
     },
     "noe-02": {
-      name: "Nœud Satin Classique",
-      size: "Unique",
-      description: "Nœud en satin rose poudré, silhouette structurée pour une allure soignée.",
+      name: "Scrunchies avec Nœud",
+      size: "Unique avec ruban suspendu",
+      description: "Un magnifique scrunchie en satin orné d'un grand nœud élégant, idéal pour ajouter une touche chic et sophistiquée à vos coiffures.",
     },
     "noe-03": {
-      name: "Petit Nœud Quotidien",
-      size: "Petit",
-      description: "Un petit nœud discret en coton, à porter tous les jours, plusieurs coloris disponibles.",
+      name: "Scrunchies avec Nœud",
+      size: "Unique avec ruban suspendu",
+      description: "Un magnifique scrunchie en satin orné d'un grand nœud élégant, idéal pour ajouter une touche chic et sophistiquée à vos coiffures.",
     },
     "hb-01": {
-      name: "Headband Matelassé Crème",
-      size: "Unique",
-      description: "Headband large et matelassé, finition crème, très confortable à porter toute la journée.",
+      name: "Headbands",
+      size: "Unique extensible",
+      description: "Un bandeau de tête tendance, souple et confortable, parfait pour maintenir les cheveux tout en apportant une touche de style au quotidien.",
     },
     "hb-02": {
-      name: "Headband Torsadé Rose",
-      size: "Unique",
-      description: "Headband torsadé en jersey doux, teinte rose dusty, coupe fine et élégante.",
+      name: "Headbands",
+      size: "Unique extensible",
+      description: "Un bandeau de tête tendance, souple et confortable, parfait pour maintenir les cheveux tout en apportant une touche de style au quotidien.",
     },
     "hb-03": {
-      name: "Headband Fin Satin",
-      size: "Unique",
-      description: "Headband fin en satin, parfait pour compléter une coiffure sans trop en faire.",
+      name: "Headbands",
+      size: "Unique extensible",
+      description: "Un bandeau de tête tendance, souple et confortable, parfait pour maintenir les cheveux tout en apportant une touche de style au quotidien.",
     },
-    "sat-01": {
-      name: "Pochette Satin Rosé",
-      size: "S",
-      description: "Petite pochette en satin doublée coton, fermeture zip, parfaite pour les essentiels.",
+    "b-01": {
+      name: "Bonnet de Nuit en Satin",
+      size: "Unique avec élastique ajustable et ruban à nouer",
+      description: "Un bonnet de nuit doux et protecteur en satin, conçu pour préserver l'hydratation des cheveux, réduire les frisottis et éviter la casse pendant le sommeil.",
     },
-    "sat-02": {
-      name: "Ruban Satin à Cheveux",
-      size: "Long",
-      description: "Long ruban en satin à nouer soi-même, plusieurs façons de le porter.",
+    "b-02": {
+      name: "Bonnet de Nuit en Satin",
+      size: "Unique avec élastique ajustable et ruban à nouer",
+      description: "Un bonnet de nuit doux et protecteur en satin, conçu pour préserver l'hydratation des cheveux, réduire les frisottis et éviter la casse pendant le sommeil.",
     },
     "tr-01": {
-      name: "Petite Trousse Fleurie",
-      size: "Petite",
-      description: "Petite trousse matelassée, motif fleuri exclusif, idéale pour le maquillage.",
+      name: "Pochettes de Maquillage / Trousses",
+      size: "Standard zippée",
+      description: "Une jolie trousse à maquillage pratique et compacte, parfaite pour ranger vos essentiels de beauté avec style au quotidien.",
     },
     "tr-02": {
-      name: "Grande Trousse Lin",
-      size: "Grande",
-      description: "Grande trousse en lin naturel doublée, pensée pour ranger tout le nécessaire du quotidien.",
+      name: "Pochettes de Maquillage / Trousses",
+      size: "Standard zippée",
+      description: "Une jolie trousse à maquillage pratique et compacte, parfaite pour ranger vos essentiels de beauté avec style au quotidien.",
     },
   },
 
-  about: {
+about: {
     eyebrow: "À propos",
     title: "Un projet cousu à la main, avec soin",
-    lede: "{{brand}} est un projet artisanal né de l'envie de créer des accessoires en tissu doux et féminins, pensés pour ajouter une touche de couleur au quotidien.",
-    body: "Chaque scrunchie, chaque nœud, chaque headband ou trousse est coupé, cousu et fini à la main, pièce par pièce. Les tissus sont choisis avec attention, et les créations sont réalisées en petites séries — pas de production de masse, seulement des pièces uniques, faites avec soin et avec amour.",
+    lede: "Pinkie est un projet artisanal né de l'envie de créer des accessoires en tissu doux et féminins, pensés pour ajouter une touche de couleur au quotidien.",
+    body: "Chaque scrunchie, nœud, headband, bonnet ou trousse est coupé, cousu et fini à la main, pièce par pièce. Toutes nos créations sont réalisées sous réservation (sur commande) pour garantir une qualité supérieure et un soin particulier à chaque pièce. Les tissus sont choisis avec soin, il n'y a pas de production de masse, seulement des pièces uniques faites avec amour et soin pour vous. Nous proposons également un service de livraison dans toutes les régions du Maroc.",
     imagePlaceholder: "Photo d'atelier / lifestyle",
   },
 
@@ -148,7 +148,6 @@ export default {
   instagram: {
     eyebrow: "Sur Instagram",
     cta: "Suivez-nous sur Instagram",
-    note: "Emplacements réservés — remplacez-les par vos vraies publications Instagram.",
   },
 
   order: {

@@ -10,15 +10,19 @@ export default function About() {
   return (
     <section id="apropos" className="section about">
       <div className="container about__inner reveal" ref={ref}>
-        <div className="about__visual">
-          <div className="about__frame">
-            <div className="about__placeholder">
-              <span>{t("about.imagePlaceholder")}</span>
-            </div>
-          </div>
+       <div className="about__visual">
+  <div className="about__frame">
+    <div className="about__placeholder">
+      <img 
+        src="src/assets/aboutus.png" 
+        alt="About Us" 
+        className="about__image" 
+      />
+    </div>
+  </div>
 
-          <span className="about__accent" />
-        </div>
+  <span className="about__accent" />
+</div>
 
         <div className="about__text">
           <p className="eyebrow">{t("about.eyebrow")}</p>

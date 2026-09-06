@@ -22,13 +22,15 @@
   justify-content: center;
   text-align: center;
   padding: 30px;
-  background: linear-gradient(150deg, var(--cream-deep) 0%, var(--rose) 140%);
+  background: #6f37422f;
   color: var(--white);
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-style: italic;
 }
-
+.about__image{
+  border-radius: 20px;
+}
 .about__text {
   max-width: 560px;
 }

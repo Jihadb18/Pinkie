@@ -38,7 +38,6 @@ export default function InstagramGallery() {
             </div>
           ))}
         </div>
-        <p className="instagram__note">{t("instagram.note")}</p>
       </div>
     </section>
   );

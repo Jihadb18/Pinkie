@@ -1,9 +1,8 @@
-// English dictionary.
 export default {
   meta: {
     title: "Pinkie — Handmade Accessories",
     description:
-      "Handmade fabric accessories — scrunchies, bows, headbands, satin pieces and pouches, made by hand in small batches.",
+      "Handmade fabric accessories — scrunchies, bows, headbands, bonnets and pouches, handcrafted in small batches.",
   },
 
   common: {
@@ -29,10 +28,10 @@ export default {
 
   hero: {
     eyebrow: "One-of-a-kind pieces, made by hand",
-    titleLine1: "Little pieces,",
+    titleLine1: "Small pieces,",
     titleLine2: "made with love.",
     description:
-      "Handmade fabric accessories to bring a soft, colourful touch to your everyday — scrunchies, bows, headbands and pouches, hand-sewn in small batches.",
+      "Handmade accessories to add a soft and colorful touch to your everyday life — scrunchies, bows, headbands, and pouches, hand-sewn in small batches.",
     imagePlaceholder: "Your product photo here",
   },
 
@@ -41,122 +40,121 @@ export default {
     scrunchies: "Scrunchies",
     noeuds: "Bows",
     headbands: "Headbands",
-    satin: "Satin",
+    bonnet: "Bonnet",
     trousse: "Pouches",
   },
 
   collection: {
     eyebrow: "The collection",
     title: "Every piece, hand-sewn",
-    lede: "Scrunchies, bows, headbands, satin pieces and pouches — small batches made to last and to be loved.",
-    empty: "No products in this category just yet.",
+    lede: "Scrunchies, bows, headbands, bonnets, and pouches — small batches designed to last and to please.",
+    empty: "No products in this category at the moment.",
     filterAriaLabel: "Filter products by category",
   },
 
   products: {
- "scr-01": {
-  name: "Scrunchie",
-  size: "Large",
-  description: "A soft and elegant satin scrunchie, available in a variety of colors.",
-},
-"scr-02": {
-  name: "Scrunchie",
-  size: "Large",
-  description: "A soft and elegant satin scrunchie, available in a variety of colors.",
-},
-"scr-03": {
-  name: "Scrunchie",
-  size: "Large",
-  description: "A soft and elegant satin scrunchie, available in a variety of colors.",
-},
-"scr-04": {
-  name: "Scrunchie",
-  size: "Large",
-  description: "A soft and elegant satin scrunchie, available in a variety of colors.",
-},
+    "scr-01": {
+      name: "Scrunchie",
+      size: "Large",
+      description: "A large, soft, and elegant satin scrunchie, available in several colors.",
+    },
+    "scr-02": {
+      name: "Scrunchie",
+      size: "Large",
+      description: "A large, soft, and elegant satin scrunchie, available in several colors.",
+    },
+    "scr-03": {
+      name: "Scrunchie",
+      size: "Large",
+      description: "A large, soft, and elegant satin scrunchie, available in several colors.",
+    },
+    "scr-04": {
+      name: "Scrunchie",
+      size: "Large",
+      description: "A large, soft, and elegant satin scrunchie, available in several colors.",
+    },
     "noe-01": {
-      name: "Soft Liberty Bow",
-      size: "One size",
-      description: "A Liberty-print bow mounted on a flat clip, hand-finished piece by piece.",
+      name: "Scrunchies with Bow",
+      size: "One size with hanging ribbon",
+      description: "A magnificent satin scrunchie adorned with a large elegant bow, ideal for adding a chic and sophisticated touch to your hairstyles.",
     },
     "noe-02": {
-      name: "Classic Satin Bow",
-      size: "One size",
-      description: "A powder-pink satin bow with a structured silhouette for a polished look.",
+      name: "Scrunchies with Bow",
+      size: "One size with hanging ribbon",
+      description: "A magnificent satin scrunchie adorned with a large elegant bow, ideal for adding a chic and sophisticated touch to your hairstyles.",
     },
     "noe-03": {
-      name: "Everyday Little Bow",
-      size: "Small",
-      description: "A subtle cotton bow for everyday wear, available in several colours.",
+      name: "Scrunchies with Bow",
+      size: "One size with hanging ribbon",
+      description: "A magnificent satin scrunchie adorned with a large elegant bow, ideal for adding a chic and sophisticated touch to your hairstyles.",
     },
     "hb-01": {
-      name: "Padded Cream Headband",
-      size: "One size",
-      description: "A wide, padded headband in a cream finish, comfortable enough to wear all day.",
+      name: "Headbands",
+      size: "One size stretchy",
+      description: "A trendy, flexible, and comfortable headband, perfect for holding hair back while bringing a stylish touch to your daily routine.",
     },
     "hb-02": {
-      name: "Twisted Pink Headband",
-      size: "One size",
-      description: "A twisted headband in soft jersey, dusty-pink shade, fine and elegant fit.",
+      name: "Headbands",
+      size: "One size stretchy",
+      description: "A trendy, flexible, and comfortable headband, perfect for holding hair back while bringing a stylish touch to your daily routine.",
     },
     "hb-03": {
-      name: "Thin Satin Headband",
-      size: "One size",
-      description: "A thin satin headband, perfect for finishing off a hairstyle without overdoing it.",
+      name: "Headbands",
+      size: "One size stretchy",
+      description: "A trendy, flexible, and comfortable headband, perfect for holding hair back while bringing a stylish touch to your daily routine.",
     },
-    "sat-01": {
-      name: "Rosy Satin Pouch",
-      size: "S",
-      description: "A small satin pouch with cotton lining and zip closure, perfect for the essentials.",
+    "b-01": {
+      name: "Satin Night Bonnet",
+      size: "One size with adjustable elastic and tie ribbon",
+      description: "A soft and protective satin night bonnet, designed to preserve hair hydration, reduce frizz, and prevent breakage during sleep.",
     },
-    "sat-02": {
-      name: "Satin Hair Ribbon",
-      size: "Long",
-      description: "A long satin ribbon to tie yourself, wearable in several ways.",
+    "b-02": {
+      name: "Satin Night Bonnet",
+      size: "One size with adjustable elastic and tie ribbon",
+      description: "A soft and protective satin night bonnet, designed to preserve hair hydration, reduce frizz, and prevent breakage during sleep.",
     },
     "tr-01": {
-      name: "Small Floral Pouch",
-      size: "Small",
-      description: "A small padded pouch in an exclusive floral print, ideal for makeup.",
+      name: "Makeup Pouches / Bags",
+      size: "Standard zipped",
+      description: "A pretty, practical, and compact makeup bag, perfect for storing your beauty essentials stylishly every day.",
     },
     "tr-02": {
-      name: "Large Linen Pouch",
-      size: "Large",
-      description: "A large lined linen pouch, designed to hold all your everyday essentials.",
+      name: "Makeup Pouches / Bags",
+      size: "Standard zipped",
+      description: "A pretty, practical, and compact makeup bag, perfect for storing your beauty essentials stylishly every day.",
     },
   },
 
-  about: {
+about: {
     eyebrow: "About",
-    title: "A project stitched by hand, with care",
-    lede: "{{brand}} is a handmade project born from a love of creating soft, feminine fabric accessories to bring a touch of colour to everyday life.",
-    body: "Every scrunchie, bow, headband and pouch is cut, sewn and finished by hand, one piece at a time. Fabrics are chosen with care, and each creation is made in small batches — no mass production, just unique pieces made with attention and love.",
+    title: "A hand-stitched project, made with care",
+    lede: "{{brand}} is an artisanal project born from the desire to create soft and feminine fabric accessories, designed to add a touch of color to everyday life.",
+    body: "Every scrunchie, bow, headband, bonnet, or pouch is cut, sewn, and finished by hand, piece by piece. All our creations are made upon reservation (to order) to ensure high quality and special care for each piece. Fabrics are carefully chosen, with no mass production—only unique pieces made with love and care just for you. We also provide delivery services across all regions of Morocco.",
     imagePlaceholder: "Workshop / lifestyle photo",
   },
 
   why: {
     eyebrow: "Why handmade",
-    title: "What makes every piece unique",
+    title: "What makes each piece unique",
     items: [
-      { title: "Handmade", text: "Every piece is cut and sewn by hand, one at a time." },
-      { title: "Small batches", text: "Limited quantities keep every creation special." },
-      { title: "Every detail matters", text: "Careful finishes and thoughtfully chosen fabrics." },
-      { title: "Made with love", text: "A genuine passion for handmade, from fabric to parcel." },
+      { title: "Handmade", text: "Every piece is cut and sewn by hand, one by one." },
+      { title: "Small batches", text: "Limited quantities to keep each creation special." },
+      { title: "Every detail counts", text: "Careful finishes and attentively selected fabrics." },
+      { title: "Created with love", text: "A passion for handmade, from fabric choice to shipping." },
     ],
   },
 
   instagram: {
     eyebrow: "On Instagram",
     cta: "Follow us on Instagram",
-    note: "Placeholder tiles — swap these for your real Instagram posts.",
   },
 
   order: {
     eyebrow: "Order",
-    title: "Fallen for a piece? Reach out directly to place your order.",
-    description: "No online checkout for now — everything happens through a direct message, for a simple, personal exchange.",
+    title: "Like a piece? Contact us directly to place your order.",
+    description: "No online ordering for now — everything happens via direct message, for a simple and personalized exchange.",
     ctaWhatsapp: "Order on WhatsApp",
-    ctaInstagram: "Message us on Instagram",
+    ctaInstagram: "Contact us on Instagram",
   },
 
   contact: {
@@ -168,7 +166,7 @@ export default {
       email: "Email",
       delivery: "Delivery",
     },
-    deliveryInfo: "Delivery available across Morocco. In-person pickup available by appointment.",
+    deliveryInfo: "Delivery available everywhere in Morocco. In-person pickup available by appointment.",
   },
 
   modal: {
@@ -182,8 +180,8 @@ export default {
   },
 
   whatsapp: {
-    defaultMessage: "Hi, I'd like to know more about your creations.",
+    defaultMessage: "Hello, I would like to know more about your creations.",
     productMessage: ({ product } = {}) =>
-      `Hi, I'm interested in the "${product}" — is it still available?`,
+      `Hello, I am interested in the product "${product}". Is it still available?`,
   },
 };

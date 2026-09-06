@@ -31,4 +31,4 @@ export function buildWhatsAppUrl(message) {
 
 // Identifiants de catégories — doivent correspondre à ceux utilisés
 // dans src/data/products.js et aux clés "categories" des fichiers i18n.
-export const categoryIds = ["tous", "scrunchies", "noeuds", "headbands", "satin", "trousse"];
+export const categoryIds = ["tous", "scrunchies", "noeuds", "headbands", "bonnet", "trousse"];
